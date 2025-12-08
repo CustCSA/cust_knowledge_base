@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d394fc61-2c57-433c-aaa2-793b228b31df" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/../work5/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../work5/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../work5/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../work5/.idea/copilot.data.migration.agent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../work5/.idea/copilot.data.migration.ask.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../work5/.idea/copilot.data.migration.ask2agent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../work5/.idea/copilot.data.migration.edit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../work5/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../work5/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../work5/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../work5/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../work5/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../work5/src/main/java/study/javase/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../work5/src/main/java/study/javase/model/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../work5/src/main/java/study/javase/model/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../work5/src/main/java/study/javase/model/Triangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../work6/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../work6/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../work6/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../work6/.idea/copilot.data.migration.agent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../work6/.idea/copilot.data.migration.ask.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../work6/.idea/copilot.data.migration.ask2agent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../work6/.idea/copilot.data.migration.edit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../work6/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../work6/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../work6/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../work6/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../work6/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../work6/src/main/java/study/javase/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../work6/src/main/java/study/javase/mapper/Mapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../work6/src/main/java/study/javase/mapper/impl/StudetMapperImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../work6/src/main/java/study/javase/model/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../work6/src/main/java/study/javase/service/ScoreCalculation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.agent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask2agent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.edit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/study/javase/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/study/javase/mapper/Mapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/study/javase/mapper/impl/StudentMapperImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/study/javase/model/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/study/javase/service/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/计算机科学技术学院课程实验报告模板v20220328 (1).docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../work2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work2/target/classes/study/javase/GuessGame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work2/target/classes/study/javase/PalindromeCheck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../work3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work3/target/classes/study/javase/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work3/target/classes/study/javase/dao/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work3/target/classes/study/javase/dao/impl/UserDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work3/target/classes/study/javase/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work3/target/classes/study/javase/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../work4/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="34DpTmlzWd6myPUYIsykO3Xzeu8" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;应用程序.Main.executor&quot;: &quot;Run&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.26830.84" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.26830.84" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="d394fc61-2c57-433c-aaa2-793b228b31df" name="更改" comment="" />
+      <created>1760758008258</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1760758008258</updated>
+      <workItem from="1760758009333" duration="1038000" />
+      <workItem from="1760765006616" duration="3372000" />
+      <workItem from="1760774707222" duration="968000" />
+      <workItem from="1760769025725" duration="45000" />
+      <workItem from="1761269145560" duration="835000" />
+      <workItem from="1761577525717" duration="207000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

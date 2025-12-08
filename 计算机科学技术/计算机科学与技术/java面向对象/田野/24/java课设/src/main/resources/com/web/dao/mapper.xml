@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace=绑定一个对应的Dao/Mapper接口-->
+<mapper namespace="com.web.dao.Book_api">
+
+    <select id="getBookByName" resultType="com.web.beans.Book">
+        select * from libary.books where bookname like #{bookname};
+    </select>
+    <!--select查询语句-->
+    <select id="getallBook" resultType="com.web.beans.Book">
+        select * from libary.books
+    </select>
+
+    <insert id="addBook" parameterType="string">
+        insert into libary.books (bookname) values (#{bookname});
+    </insert>
+
+    <delete id="removeBook" parameterType="int">
+        delete from libary.books where bookid = #{searchID};
+    </delete>
+
+    <!-- Borrow a book: insert a borrow record -->
+    <insert id="borrowBook" parameterType="map">
+        insert into libary.borrow_records (bookid, username, borrow_date, due_date, status)
+        values (#{bookid}, #{username}, now(), DATE_ADD(now(), INTERVAL 30 DAY), 0);
+    </insert>
+
+    <!-- Return a book: mark the active borrow record returned -->
+    <update id="returnBook" parameterType="int">
+        update libary.borrow_records
+        set return_date = now(), status = 1
+        where bookid = #{bookid} and status = 0;
+    </update>
+
+    <!-- Reserve a book: insert into reservations -->
+    <insert id="reserveBook" parameterType="map">
+        insert into libary.reservations (bookid, username, reserve_date)
+        values (#{bookid}, #{username}, now());
+    </insert>
+
+    <!-- Query borrow records -->
+    <select id="getBorrowRecords" resultType="com.web.beans.BorrowRecord">
+        select id, bookid, username, borrow_date, due_date, return_date, status from libary.borrow_records
+        order by borrow_date desc
+    </select>
+
+    <!-- Statistics -->
+    <select id="getTotalBooks" resultType="int">
+        select count(*) from libary.books
+    </select>
+
+    <select id="getBorrowedCount" resultType="int">
+        select count(*) from libary.borrow_records where status = 0
+    </select>
+
+    <select id="getOverdueCount" resultType="int">
+        select count(*) from libary.borrow_records where status = 0 and due_date &lt; now()
+    </select>
+
+</mapper>

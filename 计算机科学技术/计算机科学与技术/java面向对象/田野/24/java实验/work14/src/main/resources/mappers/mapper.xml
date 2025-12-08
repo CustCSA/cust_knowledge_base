@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="study.mybatis.mapper.Mapper">
+
+    <resultMap id="UserResultMap" type="study.mybatis.User">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="age" column="age"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">id, name, age</sql>
+
+    <!-- Schema initialization -->
+    <update id="createTableIfNotExists">
+        CREATE TABLE IF NOT EXISTS users (
+            id INT PRIMARY KEY AUTO_INCREMENT,
+            name VARCHAR(255),
+            age INT
+        )
+    </update>
+
+    <insert id="insert" parameterType="study.mybatis.User" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO users(name, age) VALUES(#{name}, #{age})
+    </insert>
+
+    <update id="update" parameterType="study.mybatis.User">
+        UPDATE users SET name = #{name}, age = #{age} WHERE id = #{id}
+    </update>
+
+    <delete id="delete" parameterType="int">
+        DELETE FROM users WHERE id = #{value}
+    </delete>
+
+    <select id="selectById" parameterType="int" resultMap="UserResultMap">
+        SELECT <include refid="Base_Column_List"/> FROM users WHERE id = #{value}
+    </select>
+
+    <select id="selectAll" resultMap="UserResultMap">
+        SELECT <include refid="Base_Column_List"/> FROM users ORDER BY id
+    </select>
+</mapper>

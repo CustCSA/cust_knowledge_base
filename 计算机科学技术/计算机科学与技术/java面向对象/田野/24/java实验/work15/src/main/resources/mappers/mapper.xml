@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="study.mybatis.mapper.Mapper">
+
+    <!-- AccountUser 映射 -->
+    <resultMap id="AccountUserResultMap" type="AccountUser">
+        <id property="id" column="id"/>
+        <result property="username" column="username"/>
+        <result property="password" column="password"/>
+    </resultMap>
+
+    <!-- ContactGroup 映射 -->
+    <resultMap id="ContactGroupResultMap" type="ContactGroup">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+    </resultMap>
+
+    <!-- Contact 映射 -->
+    <resultMap id="ContactResultMap" type="Contact">
+        <id property="id" column="id"/>
+        <result property="userId" column="user_id"/>
+        <result property="groupId" column="group_id"/>
+        <result property="name" column="name"/>
+        <result property="phone" column="phone"/>
+    </resultMap>
+
+    <!-- 初始化三张表 -->
+    <update id="createTablesIfNotExists">
+        CREATE TABLE IF NOT EXISTS account_user (
+            id INT PRIMARY KEY AUTO_INCREMENT,
+            username VARCHAR(50) NOT NULL,
+            password VARCHAR(50) NOT NULL
+        )
+    </update>
+
+    <update id="createContactGroupIfNotExists">
+        CREATE TABLE IF NOT EXISTS contact_group (
+            id INT PRIMARY KEY AUTO_INCREMENT,
+            name VARCHAR(100) NOT NULL
+        )
+    </update>
+
+    <update id="createContactIfNotExists">
+        CREATE TABLE IF NOT EXISTS contact (
+            id INT PRIMARY KEY AUTO_INCREMENT,
+            user_id INT NOT NULL,
+            group_id INT,
+            name VARCHAR(100) NOT NULL,
+            phone VARCHAR(20),
+            FOREIGN KEY (user_id) REFERENCES account_user(id),
+            FOREIGN KEY (group_id) REFERENCES contact_group(id)
+        )
+    </update>
+
+    <!-- 账号用户 -->
+    <insert id="insertAccountUser" parameterType="AccountUser" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO account_user(username, password)
+        VALUES(#{username}, #{password})
+    </insert>
+
+    <select id="selectAccountUserByUsername" parameterType="string" resultMap="AccountUserResultMap">
+        SELECT id, username, password
+        FROM account_user
+        WHERE username = #{username}
+    </select>
+
+    <!-- 分组 -->
+    <insert id="insertGroup" parameterType="ContactGroup" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO contact_group(name) VALUES(#{name})
+    </insert>
+
+    <select id="selectGroupsByUserId" parameterType="int" resultMap="ContactGroupResultMap">
+        SELECT id, name
+        FROM contact_group
+    </select>
+
+    <!-- 通讯录联系人 -->
+    <insert id="insertContact" parameterType="Contact" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO contact(user_id, group_id, name, phone)
+        VALUES(#{userId}, #{groupId}, #{name}, #{phone})
+    </insert>
+
+    <update id="updateContact" parameterType="Contact">
+        UPDATE contact
+        SET group_id = #{groupId},
+            name = #{name},
+            phone = #{phone}
+        WHERE id = #{id}
+    </update>
+
+    <delete id="deleteContact" parameterType="int">
+        DELETE FROM contact WHERE id = #{value}
+    </delete>
+
+    <select id="selectContactsByUserId" parameterType="int" resultMap="ContactResultMap">
+        SELECT id, user_id, group_id, name, phone
+        FROM contact
+        WHERE user_id = #{value}
+        ORDER BY id
+    </select>
+</mapper>
